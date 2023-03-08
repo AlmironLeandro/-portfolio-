@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&family=Playfair+Display&family=Poppins:wght@300;400;500;700&family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=IBM+Plex+Sans:wght@100&family=Playfair+Display&family=Poppins:wght@300;400;500;700&family=Prata&display=swap');
+
+:root {
+    --color-1: #141517;
+    --color-2: hsla(36, 72%, 70%, 1);
+    --color-3: #fff;
+    --color-4: rgb(61, 60, 60);
+    --color-5: rgba(61, 60, 60, 0.308);
+    --font-1: 'IBM Plex Sans';
+    --font-2: 'Fredoka One';
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #141517;
+    /* background-image: url(./assets/background-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+}
+
+
+
+.intro__social p:hover,
+.navbar__button:hover {
+    cursor: pointer;
+    color: var(--color-2) !important;
+}

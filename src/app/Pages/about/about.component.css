@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.decorate {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.about__grid {
+    border-top: 1px solid var(--color-2);
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 100vh;
+
+}
+
+.about__container {
+    grid-column: 2/8;
+    grid-row: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.about__about-me {
+    grid-column: 1/5;
+    grid-row: 4/7;
+    color: var(--color-3);
+    font-size: 25px;
+    font-family: var(--font-1);
+    letter-spacing: 2px;
+}
+
+.about__about-mydatas {
+    grid-column: 6/-1;
+    grid-row: 4/6;
+    color: var(--color-3);
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.email:hover {
+    cursor: pointer;
+    color: var(--color-2);
+}
+
+.about__cv {
+    place-self: center start;
+    grid-column: 6/-1;
+    grid-row: 6/8;
+    width: 320px;
+    height: 100px;
+    padding: 18px 40px;
+    color: var(--color-3);
+    background-color: var(--color-2);
+    border-radius: 20px;
+    font-size: 35px;
+    font-family: var(--font-1);
+    transition: 1.5s transform, 1.5s font-size;
+    border: none;
+}
+
+.about__cv:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    font-size: 40px;
+    color: var(--color-3);
+    background-color: var(--color-4);
+    transition: 1.5s transform, 1.5s font-size;
+
+}
+
+.about__about-mydatas div,
+a {
+    font-family: var(--font-1);
+    color: var(--color-3);
+    text-decoration: none;
+    list-style: none;
+}
+
+.about__title__shadow {
+    grid-column: 2/8;
+    grid-row: 2/4;
+    color: var(--color-5);
+    font-size: 150px;
+    font-family: var(--font-2);
+    text-transform: uppercase;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__title {
+    position: absolute;
+    color: var(--color-2);
+    bottom: 30px;
+    font-size: 50px;
+    font-family: var(--font-2);
+    text-transform: uppercase;
+}
+
+/* .about__img__container {
+    grid-column: 2/5;
+    grid-row: 2/8;
+}
+
+.about__img {
+    background-image: url(../.././../assets/about-background.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    transform: skewY(10deg);
+    background-repeat: no-repeat;
+
+
+} */
