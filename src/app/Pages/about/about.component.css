@@ -88,27 +88,7 @@ a {
     list-style: none;
 }
 
-.about__title__shadow {
-    grid-column: 2/8;
-    grid-row: 2/4;
-    color: var(--color-5);
-    font-size: 150px;
-    font-family: var(--font-2);
-    text-transform: uppercase;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.about__title {
-    position: absolute;
-    color: var(--color-2);
-    bottom: 30px;
-    font-size: 50px;
-    font-family: var(--font-2);
-    text-transform: uppercase;
-}
 
 /* .about__img__container {
     grid-column: 2/5;
