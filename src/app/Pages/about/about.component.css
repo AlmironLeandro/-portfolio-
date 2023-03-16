@@ -150,6 +150,12 @@ a {
 @media screen and (max-width:557px) {
     .title__shadow {
         font-size: 80px;
+        grid-column: 2/8;
+        grid-row: 1/2;
+    }
+
+    .about__about-me {
+        grid-row: 2/6;
     }
     .title__front{
         font-size: 20px;
