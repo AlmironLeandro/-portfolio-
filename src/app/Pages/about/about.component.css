@@ -105,3 +105,45 @@ a {
 
 
 } */
+
+
+
+
+@media screen and (max-width:997px) {
+    .about__about-me {
+        grid-column: 1/-1;
+        grid-row: 3/6;
+    }
+
+    .about__about-mydatas {
+        grid-column: 1/-1;
+        grid-row: 6/8;
+        color: var(--color-3);
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .about__cv {
+        place-self: center;
+        grid-column: 1/-1;
+        grid-row: 8/-1;
+        width: 320px;
+        height: 100px;
+        padding: 18px 40px;
+        color: var(--color-3);
+        background-color: var(--color-2);
+        border-radius: 20px;
+        font-size: 35px;
+        font-family: var(--font-1);
+        transition: 1.5s transform, 1.5s font-size;
+        border: none;
+    }
+    .about__about-me {
+        font-size: 20px;
+    }
+    .title__shadow {
+        grid-column: 2/8;
+        grid-row: 1/2;
+    }
+}

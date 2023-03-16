@@ -62,3 +62,29 @@
     position: absolute;
     border-left: 1px solid var(--color-3);
 }
+
+/* Tablet */
+
+@media screen and (max-width:940px) {
+    .about__about-me {
+        font-size: 20px;
+    }
+    .title__shadow {
+        grid-column: 2/8;
+        grid-row: 1/2;
+        font-size: 80px;
+    }
+    .title__front
+    {
+        font-size: 40px;
+    }
+
+    .resume__myeducation {
+        grid-column: 2/8;
+        grid-row: 3/6;
+    }
+    .resume__myexperience {
+        grid-column: 2/8;
+        grid-row: 7/-1;
+    }
+}
