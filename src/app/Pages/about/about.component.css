@@ -126,11 +126,10 @@ a {
     }
     .about__cv {
         place-self: center;
-        grid-column: 1/-1;
+        grid-column: 1/8;
         grid-row: 8/-1;
         width: 320px;
         height: 100px;
-        padding: 18px 40px;
         color: var(--color-3);
         background-color: var(--color-2);
         border-radius: 20px;
@@ -146,4 +145,28 @@ a {
         grid-column: 2/8;
         grid-row: 1/2;
     }
+}
+
+@media screen and (max-width:557px) {
+    .title__shadow {
+        font-size: 80px;
+    }
+    .title__front{
+        font-size: 20px;
+    }
+    .about__cv {
+        place-self: center;
+        grid-column: 1/8;
+        grid-row: 8/-1;
+        width: 250px;
+        height: 100px;
+        color: var(--color-3);
+        background-color: var(--color-2);
+        border-radius: 20px;
+        font-size: 25px;
+        font-family: var(--font-1);
+        transition: 1.5s transform, 1.5s font-size;
+        border: none;
+    }
+    
 }

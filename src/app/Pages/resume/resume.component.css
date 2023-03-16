@@ -88,3 +88,26 @@
         grid-row: 7/-1;
     }
 }
+
+/* Movil */
+
+@media screen and (max-width:523px) {
+    .title__shadow {
+        font-size: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .title__front
+    {
+        font-size: 30px;
+    }
+    .title{
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .resume__card
+    {
+        font-size: 15px;
+    }
+}
