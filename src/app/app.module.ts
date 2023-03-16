@@ -7,6 +7,7 @@ import { IntroComponent } from './Pages/intro/intro.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { AboutComponent } from './Pages/about/about.component';
 import { ResumeComponent } from './Pages/resume/resume.component';
+import { WorksComponent } from './Pages/works/works.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ResumeComponent } from './Pages/resume/resume.component';
     IntroComponent,
     NavbarComponent,
     AboutComponent,
-    ResumeComponent
+    ResumeComponent,
+    WorksComponent
   ],
   imports: [
     BrowserModule,
