@@ -162,7 +162,7 @@ a {
     }
     .about__cv {
         place-self: center;
-        grid-column: 1/8;
+        grid-column: 2/8;
         grid-row: 8/-1;
         width: 250px;
         height: 100px;
@@ -174,5 +174,11 @@ a {
         transition: 1.5s transform, 1.5s font-size;
         border: none;
     }
+    
+}
+
+
+@media screen and (max-width:445px) {
+
     
 }
