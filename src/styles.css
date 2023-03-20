@@ -8,6 +8,8 @@
     --color-3: #fff;
     --color-4: rgb(61, 60, 60);
     --color-5: rgba(61, 60, 60, 0.308);
+    --color-6: #212429;
+    --color-7: #111419;
     --font-1: 'IBM Plex Sans';
     --font-2: 'Fredoka One';
 }
@@ -54,4 +56,3 @@ body {
     font-family: var(--font-2);
     text-transform: uppercase;
 }
-
