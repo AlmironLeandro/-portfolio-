@@ -161,7 +161,7 @@
 
 }
 
-@media screen and (max-width:360px) and
+@media screen and (max-width:380px) and
 (max-height:760px) {
     .title__shadow {
         font-size: 20px;
