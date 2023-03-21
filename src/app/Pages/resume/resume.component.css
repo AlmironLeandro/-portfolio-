@@ -1,10 +1,11 @@
-
 .grid {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 1fr);
     height: 100vh;
     position: relative;
+    margin: 0;
+    padding: 0;
 }
 
 .resume__container {
@@ -16,17 +17,19 @@
     background-color: var(--color-6);
     border-radius: 30px;
 }
-.header
-{
+
+.header {
     grid-column: 1/-1;
     grid-row: 1/1;
 }
+
 .resume__education {
     font-family: var(--font-1);
 }
 
 .resume__experience {
     font-family: var(--font-1);
+    margin-bottom: 50px;
 }
 
 .education {
@@ -38,14 +41,14 @@
     grid-row: 2/-1;
     grid-column: 1/-1;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
+
 }
 
 .card {
     width: 350px;
-    height: 180px;
+    height: 150px;
     background-color: var(--color-7);
     display: flex;
     padding: 20px;
@@ -89,7 +92,15 @@
 
 
 
-@media screen and (max-height:880px) , (max-width:533px) {
+@media screen and (max-height:765px),
+(max-width:1100px) {
+    .flex__container {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+
     .card {
         width: 200px;
         height: 120px;
@@ -102,14 +113,15 @@
         border-radius: 15px;
         margin-bottom: 25px;
     }
-    .education
-    {
+
+    .education {
         font-size: 20px;
     }
+
     .card p {
         margin: 10px;
     }
-    
+
     .period {
         padding: 6px;
         width: 135px;
@@ -119,19 +131,19 @@
         color: var(--color-1);
         text-transform: uppercase;
         font-family: var(--font-2);
-    
+
     }
-    
+
     .title {
         font-size: 15px;
         color: var(--color-3);
     }
-    
+
     .place {
         color: var(--color-2);
         font-size: 10px;
     }
-    
+
     .where {
         color: var(--color-3);
         font-size: 10px;
@@ -140,11 +152,62 @@
     .title__shadow {
         font-size: 50px;
     }
-    
+
     .title__front {
         font-size: 25px;
         bottom: 0;
 
+    }
+
+}
+
+@media screen and (max-width:360px),
+(max-height:760px) {
+    .title__shadow {
+        font-size: 20px;
+    }
+
+    .title__front {
+        font-size: 10px;
+        bottom: 0;
+
+    }
+
+    .card {
+        width: 150px;
+        height: 100px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .education {
+        font-size: 10px;
+    }
+
+    .card p {
+        margin: 5px;
+    }
+
+    .period {
+        padding: 3px;
+        width: 100px;
+        font-size: 8px;
+    }
+
+    .title {
+        font-size: 10px;
+    }
+
+    .place {
+        font-size: 8px;
+    }
+
+    .where {
+        font-size: 8px;
+    }
+
+    .resume__container {
+        grid-column: 1/-1;
     }
 }
 
