@@ -97,7 +97,6 @@ h1 {
 
 .input-box label {
     position: absolute;
-    background-color: red;
     top: 50%;
     left: 5px;
     transform: translateY(-50%);
